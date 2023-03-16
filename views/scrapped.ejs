@@ -1,0 +1,21 @@
+<%- include("./templates/header.ejs")  %>
+<%- include("./templates/nav_resto.ejs") %>
+
+    <main class="mainStyle">
+        <h1><%= titulo %></h1>
+        <p><%= msg %></p>
+    </main>
+    <body>
+        <h1>Monitores en PC Componentes</h1>
+        <table>
+          <thead>
+            <tr>
+              <th>Título</th>
+              <th>Precio</th>
+              <th>Imagen</th>
+            </tr>
+          </thead>
+          <tbody id="monitorsTable"></tbody>
+        </table>
+
+<%- include("./templates/footer.ejs")  %>

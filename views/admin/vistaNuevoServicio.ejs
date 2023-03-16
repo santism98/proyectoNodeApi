@@ -1,0 +1,17 @@
+<%- include('./templates/header')  %>    
+
+<%- include('./templates/nav')  %>  
+
+<h1>Eres administrador de la web</h1>
+
+<section>
+
+<form action="http://localhost:3000/admin/servicio/actualizar"method="POST">
+    <input type="text" id="servicio" name="servicio">
+    <textarea name="descripcion" id="descripcion" cols="30" rows="10"></textarea>
+    <input type="submit" value="Añadir servicio">
+</form>
+
+</section>
+
+<%- include('./templates/footer')  %> 

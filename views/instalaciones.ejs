@@ -1,0 +1,31 @@
+<%- include("./templates/header.ejs")  %>
+<%- include("./templates/nav_resto.ejs") %>
+
+    <main class="mainStyle">
+       <table>
+  <thead>
+    <tr>
+      <th>Nombre</th>
+      <th>Capacidad</th>
+      <th>Rating</th>
+      <th>Interior</th>
+      <th>Descripción</th>
+    </tr>
+  </thead>
+  <tbody>
+    <% instalaciones.forEach(element => { %>
+      <tr>
+        <td><%= element.nombre %></td>
+        <td><%= element.capacidad %></td>
+        <td><%= element.rating %></td>
+        <td><%= element.interior %></td>
+        <td><%= element.descripcion %></td>
+      </tr>
+    <% }) %>
+  </tbody>
+</table>
+    </main>
+
+  
+
+<%- include("./templates/footer.ejs")  %>

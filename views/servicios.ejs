@@ -1,0 +1,40 @@
+<%- include("./templates/header.ejs")  %>
+<%- include("./templates/nav_resto.ejs") %>
+    <main class="mainStyle">
+
+
+
+         <h2> <%= titulo %></h2>
+
+        <p> <%= msg %></p>
+        
+
+        <h2><%= titulo %></h2>
+        <p><%= msg %></p>
+        
+        <% if(servicios.length>0) { %>
+          <table id="tablaServicios">
+            <tr>
+              <th>Servicio</th>
+              <th>Descripción</th>
+            </tr>
+            <% servicios.forEach(function(servicio) { %>
+              <tr>
+                <td><%= servicio.servicio %></td>
+                <td><%= servicio.descripcion %></td>
+              </tr>
+            <% }); %>
+          </table>
+        <% } else { %>
+          <p>No hay servicios</p>
+        <% } %>
+        
+
+
+
+            
+     
+
+    </main>
+ 
+

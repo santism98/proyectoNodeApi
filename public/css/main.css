@@ -1,0 +1,161 @@
+/* Reset CSS */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Global Styles */
+body {
+  font-family: Arial, sans-serif;
+  font-size: 16px;
+  line-height: 1.5;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+ul {
+  list-style: none;
+}
+
+/* Navigation Styles */
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #333;
+  padding: 10px;
+  margin: 5%;
+}
+
+.logo a {
+  font-size: 24px;
+  font-weight: bold;
+  color: #fff;
+}
+
+.navResto ul {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.navResto li {
+  margin-right: 20px;
+}
+
+.navResto a {
+  color: #fff;
+  font-size: 18px;
+}
+
+.navResto a:hover {
+  color: #f00;
+}
+
+.navResto a:active {
+  color: #0f0;
+}
+
+/* Header Styles */
+.header {
+  background-color: #ccc;
+  text-align: center;
+  padding: 50px;
+}
+
+.header h1 {
+  font-size: 36px;
+  font-weight: bold;
+}
+
+/* Footer Styles */
+.footer {
+  background-color: #333;
+  color: white;
+  text-align: center;
+  padding: 10px;
+}
+
+.footer h2 {
+  font-size: 24px;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+/* Table Styles */
+#tablaServicios {
+  font-family: Arial, sans-serif;
+  border-collapse: collapse;
+  margin: 0 auto;
+  max-width: 800px;
+  width: 100%;
+}
+
+#tablaServicios th, #tablaServicios td {
+  border: 1px solid #ddd;
+  padding: 8px;
+  text-align: left;
+}
+
+#tablaServicios th {
+  background-color: #f2f2f2;
+  color: #333;
+}
+
+#tablaServicios tr.even {
+  background-color: #f2f2f2;
+}
+
+#tablaServicios tr:hover {
+  background-color: #ddd;
+}
+
+/* Media Queries */
+@media screen and (max-width: 768px) {
+  nav {
+      flex-direction: column;
+      align-items: flex-start;
+  }
+
+  .logo {
+      margin-bottom: 20px;
+  }
+
+  .navResto li {
+      margin-right: 10px;
+      margin-bottom: 10px;
+  }
+
+  .header {
+      padding: 30px;
+  }
+
+  .header h1 {
+      font-size: 24px;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .navResto li {
+      margin-right: 0;
+  }
+
+  .navResto a {
+      font-size: 16px;
+  }
+
+  .header {
+      padding: 20px;
+  }
+
+  .header h1 {
+      font-size: 20px;
+  }
+
+  #tablaServicios th, #tablaServicios td {
+      font-size: 14px;
+  }
+}

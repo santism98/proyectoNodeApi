@@ -1,0 +1,15 @@
+<%- include('./templates/header')  %>    
+
+<%- include('./templates/nav')  %>  
+
+<h1>Nuestros servicios</h1>
+
+
+<a href="http://localhost:3000/admin/servicio/nuevo">Nuevo usuario</a>
+
+<% servicios.forEach(element => { %>
+    <p> <%= element.servicio %></p>
+<% }) %>
+
+
+<%- include('./templates/footer')  %> 
